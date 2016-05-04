@@ -1,6 +1,6 @@
 class Post
 
-  attr_reader :title, :url, :points, :item_id
+  attr_reader :title, :url, :points, :item_id, :comment_list
 
   def initialize(title, url, points, item_id)
     @title = title
@@ -12,7 +12,7 @@ class Post
 
   def comments
     # returns all the comments associated with a particular post
-
+    @comment_list
   end
 
   def add_comment(comment)
